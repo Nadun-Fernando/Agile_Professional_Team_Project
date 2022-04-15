@@ -468,7 +468,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 153421359}
   m_CullTransparentMesh: 1
---- !u!21 &334211644
+--- !u!21 &370827091
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
@@ -477,7 +477,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: 'img_tgtMaterial
 
-    16600'
+    16610'
   m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
@@ -910,6 +910,7 @@ MonoBehaviour:
   range: 1000000
   damage: 5
   impactForce: 60
+  score: 0
   gunsound: {fileID: 1535640951}
 --- !u!4 &1024427048 stripped
 Transform:
@@ -1261,7 +1262,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 334211644}
+  - {fileID: 370827091}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1788,6 +1789,10 @@ PrefabInstance:
     - target: {fileID: 79645035347375879, guid: 6a5ad75f514cc174d880a9bc08e9ab5f, type: 3}
       propertyPath: m_Name
       value: M1911 Handgun_Silver (WithScript)
+      objectReference: {fileID: 0}
+    - target: {fileID: 79645035347375879, guid: 6a5ad75f514cc174d880a9bc08e9ab5f, type: 3}
+      propertyPath: m_TagString
+      value: gun
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a5ad75f514cc174d880a9bc08e9ab5f, type: 3}

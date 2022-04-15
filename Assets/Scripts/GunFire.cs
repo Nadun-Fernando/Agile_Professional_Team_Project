@@ -8,7 +8,8 @@ public class GunFire : MonoBehaviour
     public float range = 50f;
     public float damage = 5f;
     public float impactForce = 60f;
-
+    public int score = 0;
+    
     public AudioSource gunsound;
 
     // Start is called before the first frame update
@@ -50,5 +51,10 @@ public class GunFire : MonoBehaviour
             
 
         }
+    }
+
+    public void shootingScore(int hit)
+    {
+        score += hit;
     }
 }
