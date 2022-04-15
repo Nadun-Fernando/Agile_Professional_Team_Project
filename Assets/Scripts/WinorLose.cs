@@ -5,9 +5,7 @@ using UnityEngine;
 
 public class WinorLose : MonoBehaviour
 {
-    private GameObject[] enemiesArray;
-
-    private int enemyCount;
+    public GameObject lostMessage;
     
     // Start is called before the first frame update
     void Start()
@@ -18,19 +16,15 @@ public class WinorLose : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        enemiesArray = GameObject.FindGameObjectsWithTag("enemy");
-        enemyCount = enemiesArray.Length;
-
-        if (enemyCount == 0)
-        {
-            print("You Won the Level!!!");
-        }
+        
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "enemy")
         {
+            Time.timeScale = 0;
+            lostMessage.SetActive(true);
             print("You Lost!!!");
         }
     }

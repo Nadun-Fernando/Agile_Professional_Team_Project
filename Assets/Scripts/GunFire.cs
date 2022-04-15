@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GunFire : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class GunFire : MonoBehaviour
     public float damage = 5f;
     public float impactForce = 60f;
     public int score = 0;
+    public Text scoreText;
     
     public AudioSource gunsound;
 
@@ -20,7 +22,8 @@ public class GunFire : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    { 
+    {
+        scoreText.text = "Score : " + score;
         /*
         if (Input.GetMouseButtonDown(0))
         {
